@@ -1,0 +1,17 @@
+version: "2.0"
+
+volumes: 
+  node_modules: {}
+
+services: 
+  
+  app: 
+    build:
+        context: ./
+        dockerfile: ./compose/app/Dockerfile
+    volumes:
+        - ./:/app
+        - ./.node_modules:/app/node_modules
+
+    ports: 
+        - "8005:8005"
