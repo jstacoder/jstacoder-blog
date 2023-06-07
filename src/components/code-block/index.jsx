@@ -16,7 +16,8 @@ export default ({children, className, live, ...rest})=>{
     return (
      <div style={{marginTop: '40px'}}>
        <LiveProvider code={children}>
-         <textarea value={code} onChange={onChange}/>
+           <LiveEditor onChange={onChange}/>
+         {/*<textarea value={code} onChange={onChange}/>*/}
          <LivePreview/>
          <LiveError/>
        </LiveProvider>
