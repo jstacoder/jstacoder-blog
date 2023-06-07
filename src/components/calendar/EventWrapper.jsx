@@ -30,7 +30,7 @@ export const WeekWrapper = props =>{
 export const Header = props =>{
   console.log('HEader', props)
   
-  return props.children ? props.children : null
+  return props.children ? props.children : `<<==${props.label}==>>`
 }
 
 export const Event = props=>{
