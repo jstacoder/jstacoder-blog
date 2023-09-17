@@ -26,6 +26,6 @@ export const wrapRootElement = ({element}) =>{
   )
 }
 
-export const wrapPageElementNodeArgs = ({...args}) =>{
+export const wrapPageElement = ({...args}) =>{
 
 }
